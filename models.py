@@ -144,3 +144,9 @@ def question_4_average_speed_over_equal_distances_but_different_speed_and_not_ex
 def question_5_several_answers_about_position_in_relation_by_time_a_b_c_d(time):
     position = time*3 - (4*(time**2)) + time**3
     return position
+
+def question_5_distance_between_position_e(time_1, time_2):
+    position_1 = question_5_several_answers_about_position_in_relation_by_time_a_b_c_d(time_1)
+    position_2 = question_5_several_answers_about_position_in_relation_by_time_a_b_c_d(time_2)
+    distance = position_2 - position_1
+    return distance
