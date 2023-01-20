@@ -159,7 +159,7 @@ def question_5_distance_between_position_e(time_1, time_2):
     distance = position_2 - position_1
     return distance
 
-def question_5_average_speed_between_two_positions(time_1, time_2):
+def question_5_average_speed_between_two_positions_f(time_1, time_2):
     '''
     inter params:time (seconds)
     return: average speed (m/s)
@@ -168,3 +168,16 @@ def question_5_average_speed_between_two_positions(time_1, time_2):
     delta_time = time_2 - time_1
     average_speed = distante / delta_time
     return average_speed
+
+def question_5_create_graph_of_position_versus_time():
+    obj = vector(0, 0, 0)
+    time = 0
+    dt = 0.01
+    graphic = gcurve(color=color.cyan)
+
+    while time <= 4:
+        x_position_obj = (time*3 - (4*(time**2)) + time**3)
+        obj.x = x_position_obj
+        graphic.plot(time, obj.x)
+        time += dt
+    return (ceil(obj.x))
