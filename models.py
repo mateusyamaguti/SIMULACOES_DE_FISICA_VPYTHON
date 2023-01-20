@@ -135,3 +135,12 @@ def question_4_average_speed_over_equal_distances_but_different_speed_and_not_ex
     t_2 = 1/speed_2
     average_speed = 2 / (t_1 + t_2)
     return (ceil(average_speed))
+
+# A posição de um objeto que se move ao longo do eixo x é dado por x = 3t -4t² + t³, onde x está em metros e t em segundo. Determine
+# a posição do objeto para os seguinte valores de t: (a) 1s, (b) 2s, (c) 3s, (d) 4s. (e) Qual é o deslocamento do objeto entre t=0 e t=4s?
+# (f) Qual é a velocidade média para o intervalo de tempo de t=2s a t=4s? (g) Desenhe o gráfico de x em função de t para 0 <= t <= 4s e 
+# indique comor resposta do item (f) pode ser determinada a partir do gráfico
+
+def question_5_several_answers_about_position_in_relation_by_time_a_b_c_d(time):
+    position = time*3 - (4*(time**2)) + time**3
+    return position
