@@ -181,3 +181,20 @@ def question_5_create_graph_of_position_versus_time():
         graphic.plot(time, obj.x)
         time += dt
     return (ceil(obj.x))
+
+# Em 1992, um recorde mundial de velocidade em uma bicicleta fori estabelido por Chris Huber. O tempo para percorrer um trecho de 200 m foi
+# apenas 6.509 s, ao final do qual Chris comentou: "Cogito ergo zoom!" (Penso, logo corro!). Em 2001, Sam Whittingham quebrou o recorde de 
+# Huber por 19 km/h. Qual foi o tempo gasto por Whittingham para percorrer os 200 m?
+
+def question_6_relative_time_difference_between_cyclist_Chris_H_and_Whittingham():
+    '''
+    inter params:time (hours), speed (km/h) and space (km)
+    return: time (seconds)
+    '''
+    space_delta= 0.200
+    time_delta_Chris_H = 0.001808
+    average_speed_Chris_H = space_delta / time_delta_Chris_H
+
+    average_speed_Whittingham = average_speed_Chris_H + 19
+    time_delta_Whittingham = (space_delta / average_speed_Whittingham)*3600
+    return time_delta_Whittingham
